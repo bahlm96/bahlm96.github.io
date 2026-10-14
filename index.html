@@ -187,6 +187,36 @@ footer{padding:28px 0;color:var(--muted);font-size:.88rem}
 .gal-btn.prev{left:10px}.gal-btn.next{right:10px}
 .gal-btn:hover{background:var(--accent)}
 .gal-count{position:absolute;right:12px;bottom:10px;background:rgba(10,18,36,.72);color:#fff;font-size:.8rem;padding:2px 10px;border-radius:999px}
+
+.pbox{margin:0 0 18px;max-width:680px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.pbox-h{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#0f1b33;color:#fff;padding:10px 18px}
+.pbox-h b{font:700 1rem "Bricolage Grotesque",system-ui,sans-serif}
+.pbox-h svg{width:120px;height:32px;flex:none}
+.pbox-b{display:grid;grid-template-columns:1.15fr 1fr}
+.pbox-b>div{padding:16px 18px}
+.pbox-b>div+div{border-left:1px solid var(--line);background:var(--sky-soft)}
+.pbox h4{margin:0 0 8px;font:700 .95rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--brand)}
+.pbox p{margin:0 0 8px;font-size:.95rem;max-width:none}
+.job .pbox ul{margin:0;padding:0;list-style:none;display:grid;gap:8px;max-width:none}
+.job .pbox li{position:relative;margin:0;padding-left:20px;font-size:.95rem}
+.job .pbox li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+@media (max-width:760px){.pbox-b{grid-template-columns:1fr}.pbox-b>div+div{border-left:0;border-top:1px solid var(--line)}}
+
+.skills .row{display:block;padding:18px 0}
+.skills dt{margin:0 0 10px;font:600 .78rem "IBM Plex Sans",system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.skills .chip{display:inline-flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 12px 6px 10px;font-size:.88rem;font-weight:500}
+.skills .chip::before{content:"";width:14px;height:14px;flex:none;background:var(--sky);-webkit-mask-image:var(--ico);mask-image:var(--ico);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain}
+.skills .chip:hover{border-color:var(--sky)}
+.skills .chip.hot{background:var(--sky-soft);border-color:var(--sky);color:var(--sky-ink);font-weight:600}
+.skills .row:nth-child(1){--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='8 6 2 12 8 18'/%3E%3Cpolyline points='16 6 22 12 16 18'/%3E%3Cline x1='14' y1='4' x2='10' y2='20'/%3E%3C/svg%3E")}
+.skills .row:nth-child(2){--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='6' y='6' width='12' height='12' rx='2'/%3E%3Cpath d='M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4'/%3E%3C/svg%3E")}
+.skills .row:nth-child(3){--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='5' r='2'/%3E%3Ccircle cx='5' cy='19' r='2'/%3E%3Ccircle cx='19' cy='19' r='2'/%3E%3Cpath d='M12 7v5M12 12l-6 5M12 12l6 5'/%3E%3C/svg%3E")}
+.skills .row:nth-child(4){--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 2L4 14h7l-1 8 9-12h-7z'/%3E%3C/svg%3E")}
+.skills .row:nth-child(5){--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20V10M10 20V4M16 20v-8M22 20H2'/%3E%3C/svg%3E")}
+.skills .row:nth-child(6){--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Ccircle cx='12' cy='12' r='3.5'/%3E%3Cpath d='M12 12l7-7'/%3E%3C/svg%3E")}
+.skills .row:nth-child(7){--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='4 17 10 11 4 5'/%3E%3Cline x1='12' y1='19' x2='20' y2='19'/%3E%3C/svg%3E")}
+.skills .row:nth-child(8){--ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='8' r='3.5'/%3E%3Cpath d='M2 21a7 7 0 0 1 14 0'/%3E%3Ccircle cx='17' cy='9' r='2.5'/%3E%3Cpath d='M16 14a5.5 5.5 0 0 1 6 5'/%3E%3C/svg%3E")}
+.nav-r{display:flex;gap:8px;align-items:center}
 </style>
 </head>
 <body>
@@ -228,7 +258,7 @@ footer{padding:28px 0;color:var(--muted);font-size:.88rem}
       <li><a href="#cv">CV</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="theme" type="button" aria-label="Changer de thème">Thème</button>
+    <span class="nav-r"><button id="lang" type="button" aria-label="Langue / Language">EN</button><button id="theme" type="button" aria-label="Changer de thème">Thème</button></span>
   </div>
 </header>
 
@@ -322,6 +352,25 @@ footer{padding:28px 0;color:var(--muted);font-size:.88rem}
         <h3>Développeur logiciel embarqué &amp; IoT</h3>
         <p class="org">Stage, Liebherr Mining Equipment, Colmar</p>
         <p class="sum">Système embarqué IoT d'acquisition de données issues de jauges de contraintes sans fil, avec une architecture logicielle multitâche.</p>
+        <div class="pbox">
+          <div class="pbox-h"><b>Problématique</b><svg viewBox="0 0 120 32" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 22H44" stroke="#8fa3c8" stroke-width="3"/><path d="M44 22l5-8 5 16 5-8" stroke="#f29a4d" stroke-width="2.5"/><path d="M64 22H80" stroke="#8fa3c8" stroke-width="3" stroke-dasharray="2 5"/><path d="M92 14a12 12 0 0 1 16 0M95 19a7 7 0 0 1 10 0" stroke="#4cb8f0" stroke-width="2.5"/><circle cx="100" cy="24" r="2" fill="#4cb8f0" stroke="none"/></svg></div>
+          <div class="pbox-b">
+            <div>
+              <h4>Des systèmes filaires</h4>
+              <p>Les systèmes actuels reposent sur des jauges de contrainte filaires. Sur une pelle hydraulique, cela pose plusieurs difficultés :</p>
+              <ul>
+                <li>Une installation longue, qui demande beaucoup de temps et de précision</li>
+                <li>Des dizaines de mètres de câbles à tirer entre l'opérateur, dans la cabine, et le point de mesure de la déformation</li>
+                <li>Un risque d'arrachement des câbles pendant le travail de la pelle : mouvements brusques, rotation, etc.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Ma réponse</h4>
+              <p>Un système autonome et portable, réuni dans un seul boîtier embarqué avec une batterie rechargeable intégrée.</p>
+              <p>Il mesure la déformation à n'importe quel endroit de la pelle, même là où l'on ne peut pas passer de fils, comme le châssis.</p>
+            </div>
+          </div>
+        </div>
         <ul>
           <li>Tâches d'acquisition, d'écriture et Wi-Fi, avec gestion des priorités</li>
           <li>Code C++ orienté objet, bring-up et intégration matériel/logiciel</li>
@@ -454,7 +503,7 @@ footer{padding:28px 0;color:var(--muted);font-size:.88rem}
     T.forEach(clearTimeout);T=[];
     document.getElementById('competences').scrollIntoView({behavior:'auto'});
     fl.classList.add('out');
-    setTimeout(function(){fl.hidden=true;fl.classList.remove('run','out');msg.textContent='Connexion USB…';document.documentElement.style.overflow='';busy=false},420);
+    setTimeout(function(){fl.hidden=true;fl.classList.remove('run','out');msg.textContent=T('Connexion USB…');document.documentElement.style.overflow='';busy=false},420);
   }
   function play(ev){
     ev.preventDefault();
@@ -463,8 +512,8 @@ footer{padding:28px 0;color:var(--muted);font-size:.88rem}
     busy=true;fl.hidden=false;document.documentElement.style.overflow='hidden';
     void fl.offsetWidth;fl.classList.add('run');
     document.getElementById('fskip').focus();
-    T.push(setTimeout(function(){msg.textContent='Flashage du firmware…'},1200));
-    T.push(setTimeout(function(){msg.textContent='Programme chargé'},2950));
+    T.push(setTimeout(function(){msg.textContent=T('Flashage du firmware…')},1200));
+    T.push(setTimeout(function(){msg.textContent=T('Programme chargé')},2950));
     T.push(setTimeout(done,3500));
   }
   document.querySelectorAll('a[href="#competences"]').forEach(function(a){a.addEventListener('click',play)});
@@ -482,7 +531,7 @@ footer{padding:28px 0;color:var(--muted);font-size:.88rem}
     T.forEach(clearTimeout);T=[];
     document.getElementById('experiences').scrollIntoView({behavior:'auto'});
     fl.classList.add('out');
-    setTimeout(function(){fl.hidden=true;fl.classList.remove('run','out');m.textContent="Ouverture de l'ordinateur…";document.documentElement.style.overflow='';busy=false},420);
+    setTimeout(function(){fl.hidden=true;fl.classList.remove('run','out');m.textContent=T("Ouverture de l'ordinateur…");document.documentElement.style.overflow='';busy=false},420);
   }
   function play(ev){
     ev.preventDefault();
@@ -491,8 +540,8 @@ footer{padding:28px 0;color:var(--muted);font-size:.88rem}
     busy=true;fl.hidden=false;document.documentElement.style.overflow='hidden';
     void fl.offsetWidth;fl.classList.add('run');
     document.getElementById('lskip').focus();
-    T.push(setTimeout(function(){m.textContent='Début de la programmation…'},1300));
-    T.push(setTimeout(function(){m.textContent='Compilation réussie'},3400));
+    T.push(setTimeout(function(){m.textContent=T('Début de la programmation…')},1300));
+    T.push(setTimeout(function(){m.textContent=T('Compilation réussie')},3400));
     T.push(setTimeout(done,4000));
   }
   document.querySelectorAll('a[href="#experiences"]').forEach(function(a){a.addEventListener('click',play)});
@@ -520,6 +569,42 @@ footer{padding:28px 0;color:var(--muted);font-size:.88rem}
       },{threshold:.6}).observe(g);
     }
   });
+})();
+</script>
+<script>
+(function(){
+  var D={"Halim Bala — Ingénieur logiciel embarqué & hardware": "Halim Bala — Embedded Software & Hardware Engineer", "Portfolio de Halim Bala, ingénieur logiciel embarqué : C/C++, RTOS, STM32, ESP32, SLAM, PCB.": "Portfolio of Halim Bala, embedded software engineer: C/C++, RTOS, STM32, ESP32, SLAM, PCB.", "Halim Bala, ingénieur logiciel embarqué & hardware": "Halim Bala, embedded software & hardware engineer", "Portfolio de Halim Bala : C/C++, RTOS, STM32, ESP32, SLAM, PCB. Mulhouse, mobile en Alsace et en France.": "Portfolio of Halim Bala: C/C++, RTOS, STM32, ESP32, SLAM, PCB. Based in Mulhouse, France, willing to relocate in Alsace and across France.", "Ouverture de l'ordinateur": "Opening the laptop", "Passer": "Skip", "Ouverture de l'ordinateur…": "Opening the laptop…", "Chargement du programme": "Loading the program", "Connexion USB…": "Connecting via USB…", "À propos": "About", "Compétences": "Skills", "Expériences": "Experience", "Formation": "Education", "Changer de thème": "Switch theme", "Thème": "Theme", "Portrait de Halim Bala": "Portrait of Halim Bala", "Ingénieur logiciel embarqué & hardware": "Embedded Software & Hardware Engineer", "Je conçois des systèmes embarqués de bout en bout, de la carte électronique au firmware : C/C++, temps réel, capteurs et protocoles industriels.": "I design embedded systems end to end, from the electronic board to the firmware: C/C++, real time, sensors and industrial protocols.", "Voir mes expériences": "See my experience", "M'écrire": "Write to me", "// tasks.cpp : acquisition toutes les 10 ms": "// tasks.cpp: acquisition every 10 ms", "Signal échantillonné": "Sampled signal", "Un échantillon toutes les 10 ms : la cadence d'acquisition de mon dernier projet, chez Liebherr Mining Equipment.": "One sample every 10 ms: the acquisition rate of my latest project, at Liebherr Mining Equipment.", "Ingénieur en logiciel embarqué, je développe en C/C++ et Python et j'intègre des systèmes temps réel (RTOS). J'ai travaillé dans l'automobile et la robotique, de la modélisation des algorithmes jusqu'aux tests et à la validation.": "I'm an embedded software engineer: I develop in C/C++ and Python and integrate real-time systems (RTOS). I have worked in automotive and robotics, from algorithm modeling through to testing and validation.", "J'ai aussi développé des compétences en SLAM et robotique (ROS, LiDAR) et en intelligence artificielle appliquée à l'industrie (Deep Learning, PyTorch). Je maîtrise les architectures matérielles analogiques et numériques (PCB, sélection de composants) et les protocoles industriels (CAN, SPI, I2C, UART, ModBus). Habitué aux environnements industriels et aux méthodes Agile, je cherche à concevoir des logiciels embarqués robustes.": "I have also built skills in SLAM and robotics (ROS, LiDAR) and in artificial intelligence applied to industry (Deep Learning, PyTorch). I master analog and digital hardware architectures (PCB, component selection) and industrial protocols (CAN, SPI, I2C, UART, ModBus). Used to industrial environments and Agile methods, I aim to design robust embedded software.", "3 ans d'expérience": "3 years of experience", "Stages et projets en embarqué": "Internships and embedded projects", "Mulhouse (68)": "Mulhouse, France", "Mobile en Alsace et en France": "Willing to relocate in Alsace and across France", "Anglais C1": "English C1", "Autonome en contexte professionnel": "Comfortable in a professional context", "Langages": "Languages", "C++ orienté objet": "Object-oriented C++", "Développement logiciel embarqué": "Embedded software development", "Programmation firmware (C/C++)": "Firmware programming (C/C++)", "Architecture multitâche & RTOS": "Multitasking architecture & RTOS", "Intégration matériel/logiciel (bring-up)": "Hardware/software integration (bring-up)", "Test & validation hardware/software": "Hardware/software testing & validation", "IoT & systèmes temps réel": "IoT & real-time systems", "Développement IHM": "HMI development", "Protocoles & technologies embarquées": "Protocols & embedded technologies", "Carte SD": "SD card", "Électronique": "Electronics", "Électronique analogique & numérique": "Analog & digital electronics", "Routage PCB": "PCB routing", "Sélection de composants": "Component selection", "Acquisition capteurs & synchronisation": "Sensor acquisition & synchronization", "Moteurs pas à pas (NEMA 17)": "Stepper motors (NEMA 17)", "Traitement de données & IA": "Data processing & AI", "Acquisition et fusion de données capteurs": "Sensor data acquisition & fusion", "Traitement du signal": "Signal processing", "Détection de défauts visuels": "Visual defect detection", "Robotique & SLAM": "Robotics & SLAM", "Localisation & cartographie 3D": "3D localization & mapping", "Environnements & outils": "Environments & tools", "Savoir-être": "Soft skills", "Autonomie": "Autonomy", "Adaptation aux environnements exigeants": "Adaptability to demanding environments", "Février – juillet 2026": "February – July 2026", "Développeur logiciel embarqué & IoT": "Embedded Software & IoT Developer", "Stage, Liebherr Mining Equipment, Colmar": "Internship, Liebherr Mining Equipment, Colmar", "Système embarqué IoT d'acquisition de données issues de jauges de contraintes sans fil, avec une architecture logicielle multitâche.": "Embedded IoT system for acquiring data from wireless strain gauges, with a multitasking software architecture.", "Problématique": "The challenge", "Des systèmes filaires": "Wired systems", "Les systèmes actuels reposent sur des jauges de contrainte filaires. Sur une pelle hydraulique, cela pose plusieurs difficultés :": "Current systems rely on wired strain gauges. On a hydraulic excavator, this raises several difficulties:", "Une installation longue, qui demande beaucoup de temps et de précision": "A long installation that demands a lot of time and precision", "Des dizaines de mètres de câbles à tirer entre l'opérateur, dans la cabine, et le point de mesure de la déformation": "Dozens of meters of cable to run between the operator, in the cab, and the point where deformation is measured", "Un risque d'arrachement des câbles pendant le travail de la pelle : mouvements brusques, rotation, etc.": "A risk of cables being torn out while the excavator works: sudden movements, rotation, etc.", "Ma réponse": "My solution", "Un système autonome et portable, réuni dans un seul boîtier embarqué avec une batterie rechargeable intégrée.": "A standalone, portable system built into a single embedded enclosure with an integrated rechargeable battery.", "Il mesure la déformation à n'importe quel endroit de la pelle, même là où l'on ne peut pas passer de fils, comme le châssis.": "It measures deformation anywhere on the excavator, even where wires cannot be run, such as the chassis.", "Tâches d'acquisition, d'écriture et Wi-Fi, avec gestion des priorités": "Acquisition, writing and Wi-Fi tasks, with priority management", "Code C++ orienté objet, bring-up et intégration matériel/logiciel": "Object-oriented C++ code, bring-up and hardware/software integration", "Communication SPI et CAN, tests et validation hardware/software": "SPI and CAN communication, hardware/software testing and validation", "Routage de la carte électronique (PCB)": "Routing of the electronic board (PCB)", "Résultat :": "Result:", "acquisition à 10 ms par mesure, appareil autonome et sans fil avec recharge batterie intégrée, données récupérables par carte SD ou Wi-Fi, interface utilisateur dédiée.": "acquisition at 10 ms per measurement, a standalone wireless device with built-in battery charging, data retrievable via SD card or Wi-Fi, and a dedicated user interface.", "Votre navigateur ne peut pas lire cette vidéo.": "Your browser cannot play this video.", "Démonstration du projet, Liebherr Mining Equipment": "Project demo, Liebherr Mining Equipment", "Photos du boîtier d'acquisition Liebherr": "Photos of the Liebherr acquisition enclosure", "Soudure de la carte électronique sur plaque à pastilles, au poste de soudure du laboratoire": "Soldering the electronic board on a perfboard, at the laboratory soldering station", "Face arrière de la carte sur plaque à pastilles, avec les pistes soudées à la main et une seringue au premier plan": "Back of the perfboard, with hand-soldered tracks and a syringe in the foreground", "Boîtier d'acquisition en cours d'assemblage, vu de côté : écran LCD, carte de développement, batterie 18650 et bornier": "Acquisition enclosure during assembly, side view: LCD screen, development board, 18650 battery and terminal block", "Boîtier imprimé en 3D ouvert, avec l'écran LCD, les trois boutons, l'antenne et le bornier vert": "Open 3D-printed enclosure, with the LCD screen, the three buttons, the antenna and the green terminal block", "Vue de dessus du boîtier ouvert : carte de développement, module carte micro SD, batterie 18650 et écran LCD": "Top view of the open enclosure: development board, micro SD card module, 18650 battery and LCD screen", "Vue de dessus du boîtier ouvert, avec le menu de sélection des voies affiché sur l'écran LCD": "Top view of the open enclosure, with the channel selection menu shown on the LCD screen", "Gros plan sur l'écran LCD affichant le menu de la voie J1 (marche/arrêt)": "Close-up of the LCD screen showing the menu for channel J1 (on/off)", "Écran LCD affichant les mesures des voies J1 et J2 en volts": "LCD screen showing the measurements of channels J1 and J2 in volts", "Écran LCD affichant « Acquisition arrêtée »": "LCD screen showing “Acquisition arrêtée” (acquisition stopped)", "Écran LCD et boutons du boîtier, acquisition arrêtée": "LCD screen and buttons of the enclosure, acquisition stopped", "Boîtier d'acquisition ouvert à côté du badge Liebherr, l'écran LCD affichant le menu de la voie J1": "Open acquisition enclosure next to the Liebherr badge, with the LCD screen showing the channel J1 menu", "Photo précédente": "Previous photo", "Photo suivante": "Next photo", "Septembre 2025 – janvier 2026": "September 2025 – January 2026", "Localisation & cartographie 3D (SLAM)": "3D Localization & Mapping (SLAM)", "Stage, ENSISA, Mulhouse": "Internship, ENSISA, Mulhouse", "SLAM appliqué à l'automobile, avec des algorithmes avancés sous ROS pour le robot autonome SMART-UHA.": "SLAM applied to the automotive field, with advanced algorithms under ROS for the SMART-UHA autonomous robot.", "Implémentation en C++ sous ROS (Ubuntu) de LeGO-LOAM et FastSLAM": "C++ implementation under ROS (Ubuntu) of LeGO-LOAM and FastSLAM", "Acquisition et fusion de données LiDAR Velodyne VLP-16, GPS et IMU avec MATLAB et Simulink": "Acquisition and fusion of Velodyne VLP-16 LiDAR, GPS and IMU data with MATLAB and Simulink", "Traitement et synchronisation multi-capteurs en temps réel": "Real-time multi-sensor processing and synchronization", "navigation autonome et cartographie de haute précision pour le robot SMART-UHA.": "autonomous navigation and high-precision mapping for the SMART-UHA robot.", "Janvier – juin 2024": "January – June 2024", "Détection d'anomalies dans les industries manufacturières": "Anomaly Detection in Manufacturing Industries", "Stage, FST (Faculté des Sciences et Technologies), Haute Alsace": "Internship, FST (Faculty of Sciences and Technologies), Haute-Alsace", "Modèle de Machine Learning pour détecter des défauts visuels dans des images industrielles.": "Machine Learning model to detect visual defects in industrial images.", "Développement d'un modèle de Machine Learning (U-Net, DFR) pour la détection de défauts visuels": "Development of a Machine Learning model (U-Net, DFR) for visual defect detection", "Programmation en C++ et entraînement des réseaux de neurones avec PyTorch": "C++ programming and neural network training with PyTorch", "prototype logiciel transférable sur caméras industrielles pour automatiser le contrôle qualité en ligne de production.": "software prototype that can be transferred to industrial cameras to automate quality control on the production line.", "Janvier – juin 2022": "January – June 2022", "Système mécatronique de diagnostic vibratoire": "Mechatronic System for Vibration Diagnostics", "Stage, USTHB, Alger": "Internship, USTHB, Algiers", "Système mécatronique 3 axes pour diagnostiquer l'état vibratoire d'un transducteur piézoélectrique.": "3-axis mechatronic system to diagnose the vibration state of a piezoelectric transducer.", "Conception et réalisation de la structure mécanique 3 axes": "Design and construction of the 3-axis mechanical structure", "Carte électronique de contrôle et de synchronisation de la machine": "Electronic board for controlling and synchronizing the machine", "Intégration de moteurs pas à pas NEMA 17 et suivi du capteur en temps réel": "Integration of NEMA 17 stepper motors and real-time sensor monitoring", "machine 3 axes opérationnelle pour le diagnostic de capteurs piézoélectriques à l'échelle micrométrique, au laboratoire de recherche de l'USTHB.": "operational 3-axis machine for diagnosing piezoelectric sensors at micrometric scale, in the USTHB research laboratory.", "Photos du système mécatronique 3 axes": "Photos of the 3-axis mechatronic system", "Système mécatronique 3 axes, photo 1 sur 4": "3-axis mechatronic system, photo 1 of 4", "Système mécatronique 3 axes, photo 2 sur 4": "3-axis mechatronic system, photo 2 of 4", "Système mécatronique 3 axes, photo 3 sur 4": "3-axis mechatronic system, photo 3 of 4", "Système mécatronique 3 axes, photo 4 sur 4": "3-axis mechatronic system, photo 4 of 4", "Formation & langues": "Education & languages", "Septembre 2024 – juin 2026": "September 2024 – June 2026", "Master II en automatique et informatique industrielle": "Master's degree (M2) in Automation and Industrial Computing", "ENSISA, Mulhouse. Parcours Systèmes embarqués et IoT": "ENSISA, Mulhouse. Embedded Systems and IoT track", "Septembre 2023 – juin 2024": "September 2023 – June 2024", "Master I en électronique, énergie électrique et automatique": "Master's degree (M1) in Electronics, Electrical Energy and Automation", "FST, Université de Haute-Alsace": "FST, University of Haute-Alsace", "Septembre 2020 – juin 2022": "September 2020 – June 2022", "Master II en électronique d'instrumentation": "Master's degree (M2) in Instrumentation Electronics", "USTHB, Alger": "USTHB, Algiers", "Français": "French", "5 sur 5": "5 out of 5", "Niveau C1": "Level C1", "Anglais": "English", "Russe": "Russian", "3 sur 5": "3 out of 5", "Niveau B1": "Level B1", "Allemand": "German", "2 sur 5": "2 out of 5", "Notions": "Basic", "Mon CV": "My CV", "Mon parcours sur un document : expériences, formation, compétences et langues.": "My background in a single document: experience, education, skills and languages.", "Télécharger mon CV (PDF)": "Download my CV (PDF, in French)", "Un projet embarqué, un poste ou une question technique ? Écrivez-moi ou appelez-moi directement.": "An embedded project, a job opening or a technical question? Write to me or call me directly.", "Téléphone": "Phone", "Localisation": "Location", "Mulhouse 68200, mobile en Alsace et en France": "Mulhouse 68200, France. Willing to relocate in Alsace and across France", "Flashage du firmware…": "Flashing the firmware…", "Programme chargé": "Program loaded", "Début de la programmation…": "Starting to code…", "Compilation réussie": "Build successful", "carrousel": "carousel"},lang='fr',O=new WeakMap(),AT=['alt','aria-label','aria-roledescription'],btn=document.getElementById('lang');
+  function n(t){return t.replace(/\s+/g,' ').trim()}
+  window.T=function(s){return lang==='en'&&D[s]?D[s]:s};
+  function skip(t){var e=t.parentElement;return !e||e.closest('svg,script,style,.flash-code,.lap-code')||(e.closest('.editor')&&!e.closest('.cm'))}
+  var metas=['meta[name="description"]','meta[property="og:title"]','meta[property="og:description"]'].map(function(q){var m=document.querySelector(q);return {m:m,o:m&&m.content}}),otitle=document.title;
+  function apply(l){
+    var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),t,list=[];
+    while(t=w.nextNode())list.push(t);
+    list.forEach(function(t){
+      if(skip(t))return;
+      var o=O.has(t)?O.get(t):t.nodeValue,k=n(o);
+      if(!k)return;
+      if(!O.has(t))O.set(t,o);
+      if(l==='en'&&D[k]){t.nodeValue=o.match(/^\s*/)[0]+D[k]+o.match(/\s*$/)[0]}else t.nodeValue=o;
+    });
+    document.querySelectorAll('[alt],[aria-label],[aria-roledescription]').forEach(function(e){
+      AT.forEach(function(a){
+        if(!e.hasAttribute(a))return;
+        e._o=e._o||{};if(!(a in e._o))e._o[a]=e.getAttribute(a);
+        var k=n(e._o[a]);e.setAttribute(a,l==='en'&&D[k]?D[k]:e._o[a]);
+      });
+    });
+    var k=n(otitle);document.title=l==='en'&&D[k]?D[k]:otitle;
+    metas.forEach(function(x){if(x.m){var k=n(x.o);x.m.content=l==='en'&&D[k]?D[k]:x.o}});
+    document.documentElement.lang=l;
+    btn.textContent=l==='en'?'FR':'EN';
+  }
+  btn.addEventListener('click',function(){
+    lang=lang==='fr'?'en':'fr';apply(lang);
+    try{localStorage.setItem('lang',lang)}catch(e){}
+  });
+  try{if(localStorage.getItem('lang')==='en'){lang='en';apply('en')}}catch(e){}
 })();
 </script>
 </body>
